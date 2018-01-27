@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <div class="my-5">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col">
+                    <a href="{{ path('product') }}" class="btn btn-success">Retourner voir tout les produit</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                           {{ product.name }}
+                        </div>
+                        <div class="card-body">
+                            Prix : {{ product.price }} €
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

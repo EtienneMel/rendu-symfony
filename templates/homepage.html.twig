@@ -1,0 +1,7 @@
+{% extends 'base.html.twig' %}
+
+{% block main %}
+    <h1>Homepage 😝</h1>
+    <p>{{ etienne|default('Etienne is awesome 😍 (yeah i have quite the ego)') }}</p>
+    {{ dump(Etienne) }}
+{% endblock %}

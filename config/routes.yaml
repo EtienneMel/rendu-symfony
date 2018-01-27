@@ -1,0 +1,8 @@
+logout:
+    path: /logout
+product:
+    path:     /product
+    controller: App\Controller\DefaultController::indexProduct
+show:
+    path:     /product/show/{id}
+    controller: App\Controller\DefaultController::showProduct
